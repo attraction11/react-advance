@@ -1,0 +1,26 @@
+/*
+* @Author: cuijk
+* @Date:   2017-11-03 11:02:11
+* @Last Modified by:   cuijk
+* @Last Modified time: 2017-11-03 14:17:31
+*/
+html{
+  font-size: 50px;
+}
+#mobileheader{
+  flex: 1;
+  background: #f6f6f6;
+}
+#mobileheader header{
+  border-bottom: 1px solid #2db7f5;
+  padding-left: 5px;
+}
+#mobileheader header img{
+  height: 50px;
+}
+#mobileheader header span{
+  font-size: 35px;
+  vertical-align: top;
+  padding-left: 10px;
+  color: #2db7f5;
+}

@@ -1,0 +1,21 @@
+/*
+* @Author: cuijk
+* @Date:   2017-11-03 11:02:11
+* @Last Modified by:   cuijk
+* @Last Modified time: 2017-11-03 14:28:12
+*/
+.logo{
+  align-items: center;
+  display: flex;
+}
+.logo img{
+  width: 48px;
+  height: 48px;
+}
+.logo span{
+  font-size: 24px;
+  padding-left: 5px;
+}
+.footer{
+  text-align: center;
+}

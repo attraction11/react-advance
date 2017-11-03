@@ -1,0 +1,7 @@
+/* 建立独立css文件的方式定义css样式*/
+:global(.smallFontSize) h1 {
+  font-size: 12px
+}
+:global(.smallFontSizeFooter) h1 {
+  font-size: 14px
+}
