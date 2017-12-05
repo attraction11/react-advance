@@ -1,3 +1,4 @@
-react学习笔记
+﻿react学习笔记
 1、react组件相关
 (1)、组件的return函数返回的HTML节点必须是一个
+.babelrc 对antd 的组件进行按需加载。

@@ -1,12 +1,25 @@
+var webpack = require('webpack');
+var path = require('path');
+
+const BabiliPlugin = require("babili-webpack-plugin");
+
 module.exports = {
   devServer: {
     historyApiFallback: true
   },
-  entry: "./src/js/root.js",
+  // performance:{
+  //   hints: 'warning',
+  //   maxEntrypointSize: 100000, //bytes
+  //   maxAssetSize: 450000,
+  // },
+  context: path.join(__dirname),
+  entry: {
+    app: "./src/js/root.js",
+    vendor: ['react'],
+  },
   output: {
     path: __dirname,
-    filename: "bundle.js",
-    publicPath: "/src/"
+    filename: "[name].js"
   },
   module: {
     loaders: [
@@ -25,7 +38,17 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+    }),
+    new BabiliPlugin()
+  ],
 }
