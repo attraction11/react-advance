@@ -1,0 +1,111 @@
+@import (reference) "../../common/base.less";
+
+input {
+  background: none;
+  outline: none;
+  border: 0px;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.banner{
+  background: url("../../images/back.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1300px;
+  min-height: 600px;
+  background-size: 100% 100%;
+}
+.b_login {
+  font-size:12px;
+}
+.b_main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -170px;
+  margin-left: -295px;
+  width: 590px;
+  height:320px;
+  background: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px -5px #000000;
+}
+.b_left{
+  width:268px;
+  float:left;
+  text-align:center;
+  line-height:320px;
+}
+.b_right{
+  width:320px;
+  float:right;
+  padding:40px 50px 40px 0;
+}
+.b_logo{
+  margin-bottom:30px;
+}
+.b_text{
+  font-size:16px;
+  color:#333;
+  letter-spacing: 12px;
+}
+.b_userName,.b_passWord{
+  border-bottom:1px solid #ccc;
+  margin-bottom:30px;
+  padding-bottom:8px;
+  line-height:20px;
+  position:relative;
+  label{
+    margin-right:5px;
+  }
+  input{
+      //color:red;
+    cursor: pointer;
+  }
+  .userNameInput,.passwordInput{
+    position: absolute;
+    height: 22px;
+    z-index: 2;
+  }
+}
+.b_blue{
+  color:#116cd3;
+}
+.b_switch{
+  p{
+    //float:left;
+    line-height:28px;
+    height:28px;
+    color:#116cd3;
+    cursor:pointer;
+    span:first-child{
+      float:left;
+    }
+    span:last-child{
+      float:right;
+      color:#666;
+    }
+  }
+  Button{
+    width:270px;
+    height:36px;
+    //float:right;
+  }
+}
+.b_error{
+  color:red;
+}
+.tel_error,.sms_error{
+  position:absolute;
+  left:17px;
+  top:1px;
+}

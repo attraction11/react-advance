@@ -1,0 +1,168 @@
+.regionBox{
+  text-align: center;
+  margin-top: 24px;
+  padding-right: 20px;
+}
+.region{
+  width: 131px;
+  height: 91px;
+  display: inline-block;
+  //padding-top: 30px;
+  text-align: center;
+  .regionStateTitle{
+    height: 24px;
+    line-height: 24px;
+    border-radius: 5px 5px 0 0;
+  }
+  .regionName{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .regionCode{
+    font-size: 14px;
+  }
+}
+.informationLabel{
+  font-size: 14px;
+  color: #333333;
+}
+.informationValue{
+  font-size: 16px;
+  color: #333333;
+}
+.informationList{
+  margin-top: 20px;
+}
+.informationDividerLine {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+.assetBundleBox{
+  display: flex;
+  margin-top: 20px;
+}
+.assetBundleName {
+  display: inline-block;
+  width: 160px;
+  height: 120px;
+  background-color: #ebeef5;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #ccc;
+  margin-bottom: 20px;
+  .assetBundleNameTitle{
+    display: inline-block;
+    padding-top: 32px;
+    font-size: 14px;
+    color: #333;
+  }
+  .assetBundleProportion{
+    font-size: 20px;
+    color: #333;
+  }
+}
+.assetBundleList{
+  display: inline-block;
+  text-align: center;
+  flex: 1;
+}
+.assetBundleHead{
+  display: inline-block;
+  text-align: center;
+  width: 160px;
+  .assetBundleName{
+    display: inline-block;
+    width: 160px;
+    height: 120px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 0 0 transparent;
+    margin-bottom: 20px;
+  }
+}
+
+.assetBundleValue{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+  span{
+    vertical-align: middle;
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.assetBundleTitle{
+  background-color: #f6f6f6;
+  &:nth-of-type(2){
+    border-radius: 5px 5px 0 0;
+  }
+  &:nth-of-type(3){
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+
+.ageGroupTitle{
+  text-align: right;
+}
+.ageGroupValue{
+  text-align: left;
+}
+
+.offBalanceSheetTips{
+  color: #999999;
+}
+.offBalanceSheetTitle{
+  font-size: 16px;
+  margin-top: 20px;
+  //border-top: 1px dashed #cccccc;
+  padding-top: 20px;
+  color: #333;
+}
+.offBalanceSheetTitleOne{
+  border-top: none;
+  padding-top: 0;
+}
+.offBalanceSheetList{
+  margin-top: 20px;
+  color: #999999;
+}
+.ageGroupList{
+  margin-bottom: 20px;
+}
+
+
+/*状态*/
+.regionContent{
+  height: 66px;
+  padding-top: 10px;
+  border-radius: 0 0 5px 5px;
+}
+.BidStateColorFn(@title,@content,@fontColorTitle,@fontColorContent){
+  .regionStateTitle{
+    background-color: @title;
+    color: @fontColorTitle;
+    font-size: 12px;
+  }
+  .regionContent{
+    background-color: @content;
+    color: @fontColorContent;
+  }
+}
+.bidNotYetBegun{
+  //未开始
+  .BidStateColorFn(#1e83e0,#1890ff,#ffffff,#ffffff);
+}
+.bidHaveInHand{
+  //进行中
+  .BidStateColorFn(#60a486,#42bf88,#ffffff,#ffffff);
+}
+.bidHasEnded{
+  //已结束
+  .BidStateColorFn(#999999,#dfdfdf,#ffffff,#999999);
+}
+.bidInvalid{
+  //已作废
+  .BidStateColorFn(#d24c45,#ec5951,#ffffff,#ffffff);
+}

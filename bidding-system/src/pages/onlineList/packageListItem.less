@@ -1,0 +1,109 @@
+@import (reference) "../../common/base.less";
+.packageListItemPanel{
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    max-width: 1200px;;
+    height: 140px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 3.6px 0 #cccccc;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    color:#333333;
+    &.finish{
+        cursor:default;
+        background-color: #f6f6f6;
+        .value{
+            color:#999999;
+        }
+        .packageListItemRegion{
+            color:#999999;
+        }
+        .packageListItemCode{
+            color:#999999;
+        }
+        .packageListItemIcon{
+            background-color:#dfdfdf;
+            .stateTitle{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                line-height: 24px;
+                text-align: center;
+                background-color:#999999;
+                color:#fff;
+                font-size: 12px;
+            }
+        }
+        &:hover{
+            transform:none;
+        }
+    }
+    &:hover{
+        transform:scale(1.02);
+    }
+}
+.packageListItem{
+    text-align: left;
+    padding-top: 30px;
+    .title{
+        font-size: 14px;
+        color:#333333;
+    }
+    .value{
+        font-size: 16px;
+        color:#333333;
+    }
+}
+.packageListItemIcon{
+    position: relative;
+    width: 131px;
+    height: 91px;
+    padding-top: 27px;
+    border-radius: 5px;
+    background-color:#42bf88;
+    overflow: hidden;
+    text-align: center;
+    .stateTitle{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        line-height: 24px;
+        text-align: center;
+        background-color:#60a486;
+        color:#fff;
+        font-size: 12px;
+    }
+}
+
+.packageListItemIcon1{
+    position: relative;
+    padding-top: 40px;
+    color:#1062c0;
+    padding-right: 16px;
+    cursor: pointer;
+    .rightIcon{
+        width: 11px;
+        height: 18px;
+        background: url('../../images/jiantou.png');
+        position: absolute;
+        right:0px;
+        top:42px;
+    }
+}
+.packageListItemRegion{
+    font-size: 26px;
+    color:#fff;
+}
+.packageListItemCode{
+    font-size: 14px;
+    color:#fff;
+}
+
+

@@ -1,0 +1,51 @@
+@import (reference) "../../common/base.less";
+.recordListItemPanel{
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    max-width: 1200px;;
+    height: 140px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 3.6px 0 #cccccc;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    color:#333333;
+
+}
+.recordListItem{
+    text-align: left;
+    padding-top: 30px;
+    .title{
+        font-size: 14px;
+        color:#333333;
+    }
+    .value{
+        font-size: 16px;
+        color:#333333;
+        &.success{
+            color:red;
+        }
+    }
+}
+.recordListItemIcon{
+    width: 101px;
+    height: 91px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+.recordListItemRegion{
+    font-size: 18px;
+    color:#fff;
+}
+.recordListItemCode{
+    font-size: 14px;
+    color:#fff;
+}
+
+

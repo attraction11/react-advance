@@ -1,0 +1,124 @@
+@import (reference) "../../common/base.less";
+.helpPanel{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+    .ant-card-body{
+       display: flex;
+       padding-top: 0;
+       padding-left: 0;
+    }
+    .nav{
+        width: 200px;
+        &.ant-anchor-wrapper{
+            padding-left: 0;
+            padding-right: 0;
+            background-color:transparent;
+            margin-left: 0;
+        }
+        .ant-anchor-ink-ball.visible{
+            display: none;
+        }
+        .ant-anchor{
+            padding-left: 0;
+        }
+        .ant-anchor-ink:before{
+            content:'';
+            width:0px;
+        }
+        .ant-anchor-wrappe{
+            padding-left: 0;
+            margin-left: -10px;
+        }
+        .ant-anchor-link{
+            padding: 0 0 0 0;
+            .ant-anchor-link{
+                .ant-anchor-link-title{
+                    padding-left: 20px;
+                    line-height: 40px;
+                    border-right: 4px solid #fff;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+        .ant-anchor-link-title{
+            padding-left: 20px;
+            line-height: 40px;
+            border-right: 4px solid #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .ant-anchor-link-title-active{
+            background-color: #e6f7ff;
+            border-right: 2px solid #1890ff !important;
+        }
+        .ant-anchor-link-active > .ant-anchor-link-title{
+            color:#333;
+        }
+    }
+    .helpContent{
+        border-left: 1px solid #ccc;
+        height: 100%;
+        overflow: auto;
+        flex: 1;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        .helpContentItem{
+            p{
+                margin: 0;
+            }
+            .title{
+                line-height: 16px;
+                font-size: 16px;
+                margin-top:30px;
+                font-weight: 600;
+                color:#333
+            }
+            .twoTitle{
+                line-height: 14px;
+                font-size: 14px;
+                margin-top:20px;
+                margin-bottom: 8px;
+                font-weight: 600;
+                color:#333
+            }
+            .subtitle{
+                line-height: 14px;
+                font-size: 14px;
+                margin-top:16px;
+                margin-bottom: 8px;
+                color:#40a9ff
+            }
+            .actionTitle{
+                font-size: 14px;
+                margin-top:16px;
+                margin-bottom: 8px;
+                font-weight: 600;
+                color:#40a9ff
+            }
+            .content{
+                line-height: 26px;
+                color:#333;
+                margin-bottom: 0;
+            }
+            .remark{
+                color:#666;
+            }
+            img{
+                display: block;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                max-width: 800px;
+                border: 1px solid #efefef;
+            }
+            .refresh{
+                display: inline-block;
+                width: 18px;
+                height: 16px;
+                margin: 0 4px;
+                background-image: url('../../images/icon1011.png');
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+@import (reference) "../../../common/base.less";
+
+
+.icon12{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 10px;
+    height: 15px;
+    background: url('../../../images/icon12.png');
+}
+.icon13{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 10px;
+    height: 15px;
+    background: url('../../../images/icon13.png');
+}
+
+
+.icon21{
+    margin: auto;
+    border-radius: 5px;
+    width: 160px;
+    height: 120px;
+    background-color: #eaeef4;
+    position: relative;
+    &.unselect{
+        cursor: pointer;
+        &:active{
+            background-color: #1890ff;
+            color:#fff;
+        }
+    }
+    &.selected{
+        background-color: #1890ff;
+        color:#fff;
+    }
+}
+
+.icon22{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 25px;
+    height: 25px;
+    background: url('../../../images/icon116.png');
+}
+
+.icon23{
+    margin: auto;
+    margin-top: 30px;
+    width: 16px;
+    height: 22px;
+    background: url('../../../images/icon991.png');
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon24{
+    position: absolute;
+    right:0;
+    top:12px;
+    cursor: pointer;
+    margin-left: 6px;
+    width: 18px;
+    height: 16px;
+    background: url('../../../images/icon1011.png');
+    &.load{
+        animation: spin 1s linear 0.1s 2;
+    }
+}
+
+.childPackageListPanel{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    padding-left: 160px;
+    .childPackageItemPanel{
+        text-align: center;
+        flex: 1;
+    }
+    .titleColumn{
+        position: absolute;
+        width: 160px;
+        left: 0px;
+        top:0px;
+        .lineThree{
+            background-color: #f6f6f6;
+        }
+        .lineFour{
+            background-color: #f6f6f6;
+        }
+    }
+    .lineOne{
+        height: 120px;
+        padding-top: 30px;
+        .childPackageName{
+            font-size: 16px;
+        }
+        .childPackageProportion{
+            font-size: 26px;
+        }
+    }
+    .lineTwo{
+        height: 44px;
+        line-height: 44px;
+    }
+    .lineThree{
+        height: 40px;
+        line-height: 40px;
+        border-top: 1px dashed #ccc;
+        position: relative;
+        &.noBorder{
+            border-top:none;
+        }
+        .tip{
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            right:8px;
+            top:14px;
+        }
+    }
+    
+    .lineFour{
+        display: flex;
+        justify-content: center;
+        height: 76px;
+        line-height: 76px;
+        border-top: 1px dashed #ccc;
+    }
+}
+.ant-form-explain{
+    text-align: left;
+}
